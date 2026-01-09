@@ -49,7 +49,7 @@
 <meta property="og:site_name" content="Arjun&#39;s Portfolio" />
 
   
-    <meta property="og:image" content="http://localhost:1313/portfolio/img/favicon/blue.png">
+    <meta property="og:image" content="/portfolio/img/favicon/blue.png">
   
 
 <meta property="og:image:width" content="1200">
@@ -130,8 +130,9 @@
     font-weight: 700;
     src: url("/portfolio/fonts/Noto_Sans_Kannada/static/NotoSansKannada-Bold.ttf") format("truetype");
   }
+   
   html, body {
-    cursor: url('/portfolio/images/paperplane.svg') 4 4, auto !important;
+    cursor: url('/portfolio/images/paperplane.svg') 4 4, auto;
   }
 </style>
 
@@ -140,8 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const postCountElement = document.getElementById('post-count');
   if (postCountElement) {
     
-    const baseURL = document.querySelector('link[rel="canonical"]')?.href.replace(/\/$/, '') || '';
-    const postsURL = new URL('/posts/', baseURL).href;
+    const baseURL = 'http:\/\/localhost:1313\/portfolio\/'.replace(/\/$/, '');
+    const postsURL = baseURL + '/posts/';
     fetch(postsURL)
       .then(response => response.text())
       .then(html => {

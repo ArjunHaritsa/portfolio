@@ -58,7 +58,7 @@ Edge-AI deployment strategies for sensor systems Tools &amp; framework developme
 
   
   
-  <meta property="og:image" content="http://localhost:1313/images/profilephoto-office.jpg">
+  <meta property="og:image" content="/images/profilephoto-office.jpg">
 
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -138,8 +138,9 @@ Edge-AI deployment strategies for sensor systems Tools &amp; framework developme
     font-weight: 700;
     src: url("/portfolio/fonts/Noto_Sans_Kannada/static/NotoSansKannada-Bold.ttf") format("truetype");
   }
+   
   html, body {
-    cursor: url('/portfolio/images/paperplane.svg') 4 4, auto !important;
+    cursor: url('/portfolio/images/paperplane.svg') 4 4, auto;
   }
 </style>
 
@@ -148,8 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const postCountElement = document.getElementById('post-count');
   if (postCountElement) {
     
-    const baseURL = document.querySelector('link[rel="canonical"]')?.href.replace(/\/$/, '') || '';
-    const postsURL = new URL('/posts/', baseURL).href;
+    const baseURL = 'http:\/\/localhost:1313\/portfolio\/'.replace(/\/$/, '');
+    const postsURL = baseURL + '/posts/';
     fetch(postsURL)
       .then(response => response.text())
       .then(html => {
