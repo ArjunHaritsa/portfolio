@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Linear Algebra for Machine Learning :: Arjun&#39;s Portfolio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Linear Algebra: The Foundation of Machine Learning Linear algebra is the mathematical backbone of machine learning and data science. Understanding vectors, matrices, and their operations is essential for grasping how machine learning algorithms work under the hood.
+Vectors and Vector Spaces A vector is an ordered array of numbers representing a point or direction in space. In machine learning, vectors represent features, data points, or model parameters.
+Vector Operations The dot product of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/linear-algebra-ml/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Linear Algebra for Machine Learning">
+<meta property="og:description" content="Linear Algebra: The Foundation of Machine Learning Linear algebra is the mathematical backbone of machine learning and data science. Understanding vectors, matrices, and their operations is essential for grasping how machine learning algorithms work under the hood.
+Vectors and Vector Spaces A vector is an ordered array of numbers representing a point or direction in space. In machine learning, vectors represent features, data points, or model parameters.
+Vector Operations The dot product of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:
+" />
+<meta property="og:url" content="//localhost:1313/posts/linear-algebra-ml/" />
+<meta property="og:site_name" content="Arjun&#39;s Portfolio" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+  <meta property="article:section" content="Mathematics" />
+
+  <meta property="article:section" content="ML" />
+
+
+  <meta property="article:published_time" content="2025-12-10 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fira-code@5.0.18/index.min.css">
+<style>
+  @font-face {
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FiraCode/Regular/FiraCodeNerdFont-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FiraCode/Bold/FiraCodeNerdFont-Bold.ttf') format('truetype');
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postCountElement = document.getElementById('post-count');
+  if (postCountElement) {
+    
+    fetch('/posts/')
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const postCards = doc.querySelectorAll('.post-card');
+        const count = postCards.length;
+        
+        
+        let current = 0;
+        const increment = count / 30;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= count) {
+            postCountElement.textContent = count;
+            clearInterval(timer);
+          } else {
+            postCountElement.textContent = Math.floor(current);
+          }
+        }, 30);
+      })
+      .catch(() => {
+        postCountElement.textContent = 'several';
+      });
+  }
+});
+</script>
+
+
+  
+
+
+</head>
+<body class="blueglossy-dark">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <div class="logo">
+  <button id="color-theme-toggle" class="logo-segment logo-segment-1" aria-label="Cycle color theme" title="Change Theme Color">
+    <span class="logo-icon"></span>
+  </button>
+  <span class="logo-separator"></span>
+  <a href="/" class="logo-segment logo-segment-2">
+    <span class="logo-text"> Arjun Haritsa</span>
+  </a>
+  <span class="logo-separator-end"></span>
+</div>
+
+    </div>
+    <div class="header__animation">
+      <span class="animated-dot animated-dot-1">•</span>
+      <span class="animated-dot animated-dot-2">•</span>
+      <span class="animated-dot animated-dot-3">•</span>
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/posts">󰗚 Posts</a></li>
+        
+      
+        
+          <li><a href="/experience">󰅩 Experience</a></li>
+        
+      
+        
+          <li><a href="/aboutme">󰘨 About Me</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+    <div class="header__controls">
+      <div class="brightness-toggle-container">
+        <input id="brightness-toggle" type="checkbox" class="brightness-switch" aria-label="Toggle brightness" />
+        <label for="brightness-toggle" class="brightness-switch__label" aria-hidden="true" title="Toggle Brightness">
+          <span class="brightness-icon">👁</span>
+        </label>
+      </div>
+      
+      <div class="header__toggle">
+        <input id="theme-toggle" type="checkbox" class="toggle-switch" aria-label="Toggle theme" />
+        <label for="theme-toggle" class="toggle-switch__label" aria-hidden="true">
+          <span class="toggle-switch__track"></span>
+          <span class="toggle-switch__thumb"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="header__separator">
+    <div class="separator-line"></div>
+    <span class="separator-icon"></span>
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/posts" >󰗚 Posts</a></li>
+        
+      
+        
+          <li><a href="/experience" >󰅩 Experience</a></li>
+        
+      
+        
+          <li><a href="/aboutme" >󰘨 About Me</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post" data-language="en" >
+  
+
+
+  
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/linear-algebra-ml/">Linear Algebra for Machine Learning</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-12-10</time>
+    
+<span class="post-reading-time">4 min read (669 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/mathematics/">Mathematics</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/linearalgebra/">LinearAlgebra</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/machinelearning/">MachineLearning</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/datascience/">DataScience</a>&nbsp;
+      
+    </span>
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="linear-algebra-the-foundation-of-machine-learning">Linear Algebra: The Foundation of Machine Learning<a href="#linear-algebra-the-foundation-of-machine-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Linear algebra is the mathematical backbone of machine learning and data science. Understanding vectors, matrices, and their operations is essential for grasping how machine learning algorithms work under the hood.</p>
+<h2 id="vectors-and-vector-spaces">Vectors and Vector Spaces<a href="#vectors-and-vector-spaces" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>A vector is an ordered array of numbers representing a point or direction in space. In machine learning, vectors represent features, data points, or model parameters.</p>
+<h3 id="vector-operations">Vector Operations<a href="#vector-operations" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The dot product of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:</p>
+<p>$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \cdots + a_nb_n$$</p>
+<p>The magnitude (or norm) of a vector $\mathbf{v}$ is:</p>
+<p>$$|\mathbf{v}| = \sqrt{\sum_{i=1}^{n} v_i^2} = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2}$$</p>
+<p>Vector normalization produces a unit vector:</p>
+<p>$$\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}$$</p>
+<h2 id="matrices-and-matrix-operations">Matrices and Matrix Operations<a href="#matrices-and-matrix-operations" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Matrices are two-dimensional arrays of numbers, fundamental to representing and transforming data in machine learning.</p>
+<h3 id="matrix-multiplication">Matrix Multiplication<a href="#matrix-multiplication" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>For matrices $A_{m \times n}$ and $B_{n \times p}$, the product $C = AB$ has dimensions $m \times p$:</p>
+<p>$$C_{ij} = \sum_{k=1}^{n} A_{ik}B_{kj}$$</p>
+<h3 id="important-matrix-properties">Important Matrix Properties<a href="#important-matrix-properties" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Definition</th>
+          <th>Formula</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Transpose</td>
+          <td>Flip rows and columns</td>
+          <td>$(A^T)<em>{ij} = A</em>{ji}$</td>
+      </tr>
+      <tr>
+          <td>Symmetric</td>
+          <td>Equals its transpose</td>
+          <td>$A = A^T$</td>
+      </tr>
+      <tr>
+          <td>Identity</td>
+          <td>Diagonal matrix of ones</td>
+          <td>$AI = IA = A$</td>
+      </tr>
+      <tr>
+          <td>Inverse</td>
+          <td>Multiplication yields identity</td>
+          <td>$AA^{-1} = A^{-1}A = I$</td>
+      </tr>
+      <tr>
+          <td>Determinant</td>
+          <td>Scalar value</td>
+          <td>$\det(AB) = \det(A)\det(B)$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="matrix-decompositions">Matrix Decompositions<a href="#matrix-decompositions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p><strong>Eigenvalue Decomposition</strong>: For a square matrix $A$:</p>
+<p>$$A = Q\Lambda Q^{-1}$$</p>
+<p>where $Q$ contains eigenvectors and $\Lambda$ is a diagonal matrix of eigenvalues.</p>
+<p><strong>Singular Value Decomposition (SVD)</strong>: For any matrix $A_{m \times n}$:</p>
+<p>$$A = U\Sigma V^T$$</p>
+<p>where $U$ and $V$ are orthogonal matrices and $\Sigma$ contains singular values.</p>
+<h2 id="applications-in-machine-learning">Applications in Machine Learning<a href="#applications-in-machine-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="linear-regression">Linear Regression<a href="#linear-regression" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The linear regression solution minimizes the squared error:</p>
+<p>$$\mathbf{w}^* = (X^TX)^{-1}X^T\mathbf{y}$$</p>
+<p>where $X$ is the feature matrix and $\mathbf{y}$ is the target vector.</p>
+<h3 id="principal-component-analysis-pca">Principal Component Analysis (PCA)<a href="#principal-component-analysis-pca" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>PCA finds the directions of maximum variance:</p>
+<p>$$\text{Cov}(X) = \frac{1}{n}X^TX$$</p>
+<p>The eigenvectors of the covariance matrix are the principal components.</p>
+<h3 id="neural-network-forward-pass">Neural Network Forward Pass<a href="#neural-network-forward-pass" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The output of a layer can be expressed as:</p>
+<p>$$\mathbf{h} = \sigma(W\mathbf{x} + \mathbf{b})$$</p>
+<p>where:</p>
+<ul>
+<li>$W$ is the weight matrix</li>
+<li>$\mathbf{x}$ is the input vector</li>
+<li>$\mathbf{b}$ is the bias vector</li>
+<li>$\sigma$ is the activation function</li>
+</ul>
+<h2 id="vector-spaces-and-subspaces">Vector Spaces and Subspaces<a href="#vector-spaces-and-subspaces" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>A vector space $V$ over field $\mathbb{F}$ satisfies:</p>
+<ol>
+<li><strong>Closure under addition</strong>: $\mathbf{u} + \mathbf{v} \in V$ for all $\mathbf{u}, \mathbf{v} \in V$</li>
+<li><strong>Closure under scalar multiplication</strong>: $c\mathbf{v} \in V$ for all $c \in \mathbb{F}$ and $\mathbf{v} \in V$</li>
+<li><strong>Existence of zero vector</strong>: $\mathbf{0} \in V$</li>
+<li><strong>Existence of additive inverse</strong>: For each $\mathbf{v} \in V$, there exists $-\mathbf{v} \in V$</li>
+</ol>
+<h3 id="linear-independence">Linear Independence<a href="#linear-independence" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Vectors $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ are linearly independent if:</p>
+<p>$$c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_n\mathbf{v}_n = \mathbf{0}$$</p>
+<p>implies $c_1 = c_2 = \cdots = c_n = 0$.</p>
+<h3 id="rank-and-dimensionality">Rank and Dimensionality<a href="#rank-and-dimensionality" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The rank of a matrix is the dimension of its column space:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Rank Type</th>
+          <th>Definition</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Full rank</td>
+          <td>$\text{rank}(A) = \min(m, n)$ for $A_{m \times n}$</td>
+      </tr>
+      <tr>
+          <td>Rank deficient</td>
+          <td>$\text{rank}(A) &lt; \min(m, n)$</td>
+      </tr>
+      <tr>
+          <td>Column rank</td>
+          <td>Dimension of column space</td>
+      </tr>
+      <tr>
+          <td>Row rank</td>
+          <td>Dimension of row space</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="norms-and-distance-metrics">Norms and Distance Metrics<a href="#norms-and-distance-metrics" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Different norms measure vector magnitude differently:</p>
+<p><strong>$L^1$ norm (Manhattan distance)</strong>:
+$$|\mathbf{x}|<em>1 = \sum</em>{i=1}^{n} |x_i|$$</p>
+<p><strong>$L^2$ norm (Euclidean distance)</strong>:
+$$|\mathbf{x}|<em>2 = \sqrt{\sum</em>{i=1}^{n} x_i^2}$$</p>
+<p><strong>$L^\infty$ norm (Maximum norm)</strong>:
+$$|\mathbf{x}|_\infty = \max_i |x_i|$$</p>
+<h2 id="orthogonality-and-projections">Orthogonality and Projections<a href="#orthogonality-and-projections" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Two vectors $\mathbf{u}$ and $\mathbf{v}$ are orthogonal if:</p>
+<p>$$\mathbf{u} \cdot \mathbf{v} = 0$$</p>
+<p>The projection of $\mathbf{v}$ onto $\mathbf{u}$ is:</p>
+<p>$$\text{proj}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}|^2}\mathbf{u}$$</p>
+<h2 id="computational-complexity">Computational Complexity<a href="#computational-complexity" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Understanding the computational cost of operations is crucial:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Operation</th>
+          <th>Complexity</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Vector addition</td>
+          <td>$O(n)$</td>
+          <td>Element-wise operation</td>
+      </tr>
+      <tr>
+          <td>Dot product</td>
+          <td>$O(n)$</td>
+          <td>Sum of products</td>
+      </tr>
+      <tr>
+          <td>Matrix multiplication</td>
+          <td>$O(n^3)$</td>
+          <td>For $n \times n$ matrices</td>
+      </tr>
+      <tr>
+          <td>Matrix inversion</td>
+          <td>$O(n^3)$</td>
+          <td>Using Gaussian elimination</td>
+      </tr>
+      <tr>
+          <td>Eigenvalue decomposition</td>
+          <td>$O(n^3)$</td>
+          <td>Iterative algorithms</td>
+      </tr>
+      <tr>
+          <td>SVD</td>
+          <td>$O(mn^2)$</td>
+          <td>For $m \times n$ matrix with $m &gt; n$</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Linear algebra provides the essential mathematical tools for understanding and implementing machine learning algorithms. From simple linear regression to complex deep neural networks, these concepts form the foundation of modern data science. Mastering linear algebra opens the door to deeper understanding of optimization, dimensionality reduction, and advanced ML techniques.</p>
+<p><code>#Mathematics</code> <code>#LinearAlgebra</code> <code>#MachineLearning</code> <code>#DataScience</code> <code>#Optimization</code></p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h"></span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="//localhost:1313/posts/firstpost/">
+                <span class="button__icon">←</span>
+                <span class="button__text">[First Post] Writing - in the era of AI?</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="//localhost:1313/posts/advaita-vedanta/">
+                <span class="button__text">ಅದ್ವೈತ ವೇದಾಂತ: ಏಕತ್ವದ ತತ್ವಶಾಸ್ತ್ರ</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    <div class="comments-section">
+  <script src="https://giscus.app/client.js"
+    data-repo="mirus-ua/hugo-theme-re-terminal"
+    data-repo-id=""
+    data-category="Comments"
+    data-category-id=""
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Arjun&#39;s Portfolio</title>
+    <link>//localhost:1313/tags/ai/</link>
+    <description>Recent content in AI on Arjun&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantization in deep learning architectures</title>
+      <link>//localhost:1313/posts/quantization/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/quantization/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Quantization, in the context of neural network is a lossy compression process of mapping float values of weights of either a pre-trained kernel or during a neural network training to a fixed bit-width representation. The mapping constraints the network to lose an affordable accuracy of the model&amp;rsquo;s performance, depending on the size of the chosen bit-width.&lt;/p&gt;
+&lt;p&gt;Generally, quantization compresses the network allowing to store the model more efficiently in the memory. In specialized hardwares (&lt;a href=&#34;https://en.wikipedia.org/wiki/Hardware_acceleration&#34;&gt;Accelerators&lt;/a&gt;) or &lt;a href=&#34;https://en.wikipedia.org/wiki/Single_instruction,_multiple_data&#34;&gt;&lt;strong&gt;SIMD&lt;/strong&gt;&lt;/a&gt; supported CPUs, the stored weights are vectorized for the computation to increase the speed of the inference significantly.&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Quantization, in the context of neural network is a lossy compression process of mapping float values of weights of either a pre-trained kernel or during a neural network training to a fixed bit-width representation. The mapping constraints the network to lose an affordable accuracy of the model&amp;rsquo;s performance, depending on the size of the chosen bit-width.&lt;/p&gt;
+&lt;p&gt;Generally, quantization compresses the network allowing to store the model more efficiently in the memory. In specialized hardwares (&lt;a href=&#34;https://en.wikipedia.org/wiki/Hardware_acceleration&#34;&gt;Accelerators&lt;/a&gt;) or &lt;a href=&#34;https://en.wikipedia.org/wiki/Single_instruction,_multiple_data&#34;&gt;&lt;strong&gt;SIMD&lt;/strong&gt;&lt;/a&gt; supported CPUs, the stored weights are vectorized for the computation to increase the speed of the inference significantly.&lt;/p&gt;
+&lt;p&gt;Mathematically, we can say the mapping as:&lt;/p&gt;
+&lt;p&gt;$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://leimao.github.io/article/Neural-Networks-Quantization&#34;&gt;Leo MAO&amp;rsquo;s Log Book - Quantization for Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/1712.05877&#34;&gt;Quantization and Training of Neural Networks for Efficient
+Integer-Arithmetic-Only Inference&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

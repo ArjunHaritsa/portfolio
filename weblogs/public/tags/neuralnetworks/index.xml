@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NeuralNetworks on Arjun&#39;s Portfolio</title>
+    <link>//localhost:1313/tags/neuralnetworks/</link>
+    <description>Recent content in NeuralNetworks on Arjun&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/neuralnetworks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning Fundamentals: A Comprehensive Guide</title>
+      <link>//localhost:1313/posts/deep-learning-fundamentals/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/deep-learning-fundamentals/</guid>
+      <description>&lt;h1 id=&#34;understanding-deep-learning&#34;&gt;Understanding Deep Learning&lt;/h1&gt;
+&lt;p&gt;Deep learning has revolutionized the field of artificial intelligence, enabling machines to learn from vast amounts of data and make intelligent decisions. This post explores the fundamental concepts that make deep learning such a powerful tool in modern AI applications.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-deep-learning&#34;&gt;What is Deep Learning?&lt;/h2&gt;
+&lt;p&gt;Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence &amp;ldquo;deep&amp;rdquo;) to progressively extract higher-level features from raw input. Unlike traditional machine learning algorithms, deep learning can automatically discover the representations needed for feature detection or classification from raw data.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;understanding-deep-learning&#34;&gt;Understanding Deep Learning&lt;/h1&gt;
+&lt;p&gt;Deep learning has revolutionized the field of artificial intelligence, enabling machines to learn from vast amounts of data and make intelligent decisions. This post explores the fundamental concepts that make deep learning such a powerful tool in modern AI applications.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-deep-learning&#34;&gt;What is Deep Learning?&lt;/h2&gt;
+&lt;p&gt;Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence &amp;ldquo;deep&amp;rdquo;) to progressively extract higher-level features from raw input. Unlike traditional machine learning algorithms, deep learning can automatically discover the representations needed for feature detection or classification from raw data.&lt;/p&gt;
+&lt;p&gt;The key innovation of deep learning lies in its ability to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn hierarchical representations of data&lt;/li&gt;
+&lt;li&gt;Automatically extract features without manual engineering&lt;/li&gt;
+&lt;li&gt;Scale performance with increased data and computational power&lt;/li&gt;
+&lt;li&gt;Handle unstructured data like images, audio, and text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;neural-network-architecture&#34;&gt;Neural Network Architecture&lt;/h2&gt;
+&lt;p&gt;At the heart of deep learning are neural networks, computational models inspired by the human brain. A typical neural network consists of:&lt;/p&gt;
+&lt;h3 id=&#34;input-layer&#34;&gt;Input Layer&lt;/h3&gt;
+&lt;p&gt;The input layer receives raw data, whether it&amp;rsquo;s pixels from an image, words from a sentence, or sensor readings from a device. Each input feature is represented as a node in this layer.&lt;/p&gt;
+&lt;h3 id=&#34;hidden-layers&#34;&gt;Hidden Layers&lt;/h3&gt;
+&lt;p&gt;Hidden layers are where the magic happens. These intermediate layers transform the input data through a series of weighted connections and activation functions. Deep networks may have dozens or even hundreds of hidden layers, each learning increasingly abstract representations.&lt;/p&gt;
+&lt;h3 id=&#34;output-layer&#34;&gt;Output Layer&lt;/h3&gt;
+&lt;p&gt;The output layer produces the final prediction or classification. For a binary classification task, this might be a single node with a probability. For multi-class problems, there would be one node per class.&lt;/p&gt;
+&lt;h2 id=&#34;key-components&#34;&gt;Key Components&lt;/h2&gt;
+&lt;h3 id=&#34;activation-functions&#34;&gt;Activation Functions&lt;/h3&gt;
+&lt;p&gt;Activation functions introduce non-linearity into the network, allowing it to learn complex patterns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ReLU (Rectified Linear Unit)&lt;/strong&gt;: Most commonly used, computationally efficient&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sigmoid&lt;/strong&gt;: Outputs values between 0 and 1, useful for probabilities&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tanh&lt;/strong&gt;: Outputs values between -1 and 1, zero-centered&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Softmax&lt;/strong&gt;: Used in output layer for multi-class classification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;loss-functions&#34;&gt;Loss Functions&lt;/h3&gt;
+&lt;p&gt;Loss functions measure how well the network&amp;rsquo;s predictions match the actual labels:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cross-Entropy Loss&lt;/strong&gt;: Standard for classification tasks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mean Squared Error&lt;/strong&gt;: Common for regression problems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hinge Loss&lt;/strong&gt;: Used in support vector machines and some neural networks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;optimization-algorithms&#34;&gt;Optimization Algorithms&lt;/h3&gt;
+&lt;p&gt;Optimizers update the network&amp;rsquo;s weights to minimize the loss:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SGD (Stochastic Gradient Descent)&lt;/strong&gt;: Simple but effective&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adam&lt;/strong&gt;: Adaptive learning rate, most popular choice&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RMSprop&lt;/strong&gt;: Good for recurrent neural networks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AdaGrad&lt;/strong&gt;: Adapts learning rate for sparse features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;training-process&#34;&gt;Training Process&lt;/h2&gt;
+&lt;p&gt;Training a deep learning model involves several critical steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Forward Propagation&lt;/strong&gt;: Input data flows through the network, and predictions are generated&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Loss Calculation&lt;/strong&gt;: The difference between predictions and actual values is computed&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backward Propagation&lt;/strong&gt;: Gradients are calculated and propagated backward through the network&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weight Update&lt;/strong&gt;: Network parameters are adjusted to minimize the loss&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iteration&lt;/strong&gt;: This process repeats for multiple epochs until convergence&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;common-challenges&#34;&gt;Common Challenges&lt;/h2&gt;
+&lt;h3 id=&#34;overfitting&#34;&gt;Overfitting&lt;/h3&gt;
+&lt;p&gt;When a model learns the training data too well, including its noise and outliers, it fails to generalize to new data. Solutions include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dropout layers&lt;/li&gt;
+&lt;li&gt;L1/L2 regularization&lt;/li&gt;
+&lt;li&gt;Early stopping&lt;/li&gt;
+&lt;li&gt;Data augmentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vanishing-gradients&#34;&gt;Vanishing Gradients&lt;/h3&gt;
+&lt;p&gt;In very deep networks, gradients can become extremely small, preventing effective learning in early layers. Modern architectures address this with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Residual connections (ResNet)&lt;/li&gt;
+&lt;li&gt;Batch normalization&lt;/li&gt;
+&lt;li&gt;Better activation functions (ReLU vs Sigmoid)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;computational-requirements&#34;&gt;Computational Requirements&lt;/h3&gt;
+&lt;p&gt;Deep learning models require significant computational resources. Strategies to manage this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GPU/TPU acceleration&lt;/li&gt;
+&lt;li&gt;Model compression and pruning&lt;/li&gt;
+&lt;li&gt;Knowledge distillation&lt;/li&gt;
+&lt;li&gt;Quantization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;applications&#34;&gt;Applications&lt;/h2&gt;
+&lt;p&gt;Deep learning has transformed numerous industries:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Computer Vision&lt;/strong&gt;: Image classification, object detection, facial recognition&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Natural Language Processing&lt;/strong&gt;: Machine translation, sentiment analysis, chatbots&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Healthcare&lt;/strong&gt;: Disease diagnosis, drug discovery, medical imaging&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autonomous Vehicles&lt;/strong&gt;: Self-driving cars, drones&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robotics&lt;/strong&gt;: Motion planning, manipulation, perception&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Finance&lt;/strong&gt;: Fraud detection, algorithmic trading, risk assessment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Deep learning continues to push the boundaries of what&amp;rsquo;s possible in artificial intelligence. As computational power increases and new architectures emerge, we can expect even more impressive applications. Understanding these fundamentals provides a solid foundation for exploring advanced topics and implementing deep learning solutions.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#DeepLearning&lt;/code&gt; &lt;code&gt;#AI&lt;/code&gt; &lt;code&gt;#NeuralNetworks&lt;/code&gt; &lt;code&gt;#MachineLearning&lt;/code&gt; &lt;code&gt;#Python&lt;/code&gt; &lt;code&gt;#TensorFlow&lt;/code&gt; &lt;code&gt;#PyTorch&lt;/code&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

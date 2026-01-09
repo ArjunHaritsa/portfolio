@@ -1,0 +1,3 @@
+[submodule "weblogs/themes/xterminal"]
+	path = weblogs/themes/xterminal
+	url = https://github.com/ArjunHaritsa/hugo-xterminal.git

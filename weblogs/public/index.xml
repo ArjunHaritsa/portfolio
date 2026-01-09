@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arjun&#39;s Portfolio</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Arjun&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[First Post] Writing - in the era of AI?</title>
+      <link>//localhost:1313/posts/firstpost/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/firstpost/</guid>
+      <description>&lt;h2 id=&#34;why-blogging&#34;&gt;Why blogging?&lt;/h2&gt;
+&lt;p&gt;Clearly this is an era of AI that we are witnessing with LLMs; simulating &amp;amp; mocking human intelligence as agents - text translation, text interpretation and text transformation is nearly a solved problem by today for an average Joe. Stack overflow is hitting all time low in their listings for any technical assistance post while LLMs are conjugating as senators - from code explanations to code reviews. Their performance is a topic for another day but in this era of &amp;ldquo;Ask Chat-GPT to create a concrete plan for 3 days road trip in Switzerland&amp;rdquo;, who has overcome their ADHD to read a blog post?&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;why-blogging&#34;&gt;Why blogging?&lt;/h2&gt;
+&lt;p&gt;Clearly this is an era of AI that we are witnessing with LLMs; simulating &amp;amp; mocking human intelligence as agents - text translation, text interpretation and text transformation is nearly a solved problem by today for an average Joe. Stack overflow is hitting all time low in their listings for any technical assistance post while LLMs are conjugating as senators - from code explanations to code reviews. Their performance is a topic for another day but in this era of &amp;ldquo;Ask Chat-GPT to create a concrete plan for 3 days road trip in Switzerland&amp;rdquo;, who has overcome their ADHD to read a blog post?&lt;/p&gt;
+&lt;p&gt;Well, I don&amp;rsquo;t intend to address the blog to anyone to be honest, it&amp;rsquo;s a note keeper for me; a salient friend who wires up some neurons in my brain to organize my thoughts into the tips of my fingers or to avail of the Feynman technique or to develop a mental clarity about a concept that I&amp;rsquo;m trying to understand and to avoid brain rot from the information overflow, scrolling over the social media postings.&lt;/p&gt;
+&lt;h2 id=&#34;whats-on-my-mind&#34;&gt;What&amp;rsquo;s on my mind?&lt;/h2&gt;
+&lt;p&gt;At times, I will write technical contents of &lt;code&gt;Math&lt;/code&gt; behind &lt;code&gt;Deep Learning&lt;/code&gt;, &lt;code&gt;C++&lt;/code&gt; and software frameworks. I&amp;rsquo;m an advocate of philosophy - &lt;code&gt;Vedanta&lt;/code&gt; has impeccable sources of wisdom to ponder and large verses to explain. I will try to pen down contextual translations of the verses to &amp;ldquo;the generation of science&amp;rdquo; in a comprehensible manner; and in ಕನ್ನಡ, some of my poems and short stories will be posted.&lt;/p&gt;
+&lt;h2 id=&#34;who-ought-to-be-the-listeners&#34;&gt;Who ought to be the listeners?&lt;/h2&gt;
+&lt;p&gt;The universe and serendipity. One who pops for a reference, one who wants to discuss further on a post and for the ones that want to fix the mistakes in my typos or equations.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>//localhost:1313/aboutme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/aboutme/</guid>
+      <description>&lt;h1 id=&#34;-whoami&#34;&gt; whoami&lt;/h1&gt;
+&lt;p&gt;Hey!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a machine learning software engineer &lt;a href=&#34;https://www.bosch-sensortec.com/&#34;&gt;@BoschSensortec&lt;/a&gt; focusing on Edge-AI deployment strategies.&lt;/p&gt;
+&lt;p&gt;Currently, my area of interests are to build software tools to bring meaningful appliances of artificial intelligence at the edge; specifically, on low power embedded devices &lt;/p&gt;
+&lt;p&gt;Prior to Embedded-AI, I have worked in the Automotive industry on vehicle networking protocols, in the banking services for verification systems and in the space research organization to implement control systems on embedded platforms.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;-whoami&#34;&gt; whoami&lt;/h1&gt;
+&lt;p&gt;Hey!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a machine learning software engineer &lt;a href=&#34;https://www.bosch-sensortec.com/&#34;&gt;@BoschSensortec&lt;/a&gt; focusing on Edge-AI deployment strategies.&lt;/p&gt;
+&lt;p&gt;Currently, my area of interests are to build software tools to bring meaningful appliances of artificial intelligence at the edge; specifically, on low power embedded devices &lt;/p&gt;
+&lt;p&gt;Prior to Embedded-AI, I have worked in the Automotive industry on vehicle networking protocols, in the banking services for verification systems and in the space research organization to implement control systems on embedded platforms.&lt;/p&gt;
+&lt;p&gt;Apart from work, I like hiking, mountain biking and traveling. Occasionally, I do photography; Regularly I cook and sometimes I just put my  headphones on while coding - listening to all genres of music 󱚓&lt;/p&gt;
+&lt;p&gt;Feel free to explore the content and reach out if you&amp;rsquo;d like to connect.&lt;/p&gt;
+&lt;h2 id=&#34;-get-in-touch&#34;&gt; Get in Touch&lt;/h2&gt;
+&lt;p&gt;You can find me on various platforms or drop a comment on the post you read.&lt;/p&gt;
+&lt;h1 id=&#34;--&#34;&gt;&lt;a href=&#34;https://www.linkedin.com/in/arjunharitsa/&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://www.flickr.com/photos/arjunharitsa/&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/ArjunHaritsa&#34;&gt;&lt;/a&gt;&lt;/h1&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>//localhost:1313/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/experience/</guid>
+      <description>&lt;h1&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Technologies &amp;amp; Tools&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Programming&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;C, C++(11), Python(3.x)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Machine Learning&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Keras 3.x, TensorFlow 2.x, TFLite, PyTorch 2.x, Scikit-Learn, ARM-CMSIS-NN&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud &amp;amp; DevOps&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Docker, GitHub Actions&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Microcontrollers&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;ARM Cortex-M4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Operating Systems&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Linux, FreeRTOS, Zephyr&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;
+&lt;h3 id=&#34;software-architect-may-2022---present&#34;&gt;Software Architect &lt;code&gt;May 2022 - Present&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bosch Sensortec GmbH&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Reutlingen, Germany&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At my current role, I&amp;rsquo;m responsible for enabling &lt;code&gt;Edge-AI&lt;/code&gt; on Bosch Sensortec&amp;rsquo;s smart and advanced sensor projects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Edge-AI&lt;/code&gt; deployment strategies for sensor systems&lt;/li&gt;
+&lt;li&gt;Tools &amp;amp; framework development for deep learning model translation&lt;/li&gt;
+&lt;li&gt;On-Device training and inference frameworks under a computational budget of &amp;lt;256KB memory on CPUs running @20-120Mhz&lt;/li&gt;
+&lt;li&gt;MLOps &amp;amp; pipelines for data analysis and model deployment&lt;/li&gt;
+&lt;li&gt;Coordination with research and external partners for pre-developmental activities&lt;/li&gt;
+&lt;li&gt;Mentoring and internships for students on &lt;code&gt;Embedded-AI&lt;/code&gt; and application development topics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Tensorflow&lt;/code&gt; &lt;code&gt;PyTorch&lt;/code&gt; &lt;code&gt;MLOps&lt;/code&gt; &lt;code&gt;Python&lt;/code&gt; &lt;code&gt;TensorFlow&lt;/code&gt; &lt;code&gt;ARM-CMSIS&lt;/code&gt;&lt;/p&gt;</description>
+      <content>&lt;h1&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Technologies &amp;amp; Tools&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Programming&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;C, C++(11), Python(3.x)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Machine Learning&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Keras 3.x, TensorFlow 2.x, TFLite, PyTorch 2.x, Scikit-Learn, ARM-CMSIS-NN&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud &amp;amp; DevOps&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Docker, GitHub Actions&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Microcontrollers&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;ARM Cortex-M4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Operating Systems&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Linux, FreeRTOS, Zephyr&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;
+&lt;h3 id=&#34;software-architect-may-2022---present&#34;&gt;Software Architect &lt;code&gt;May 2022 - Present&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bosch Sensortec GmbH&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Reutlingen, Germany&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At my current role, I&amp;rsquo;m responsible for enabling &lt;code&gt;Edge-AI&lt;/code&gt; on Bosch Sensortec&amp;rsquo;s smart and advanced sensor projects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Edge-AI&lt;/code&gt; deployment strategies for sensor systems&lt;/li&gt;
+&lt;li&gt;Tools &amp;amp; framework development for deep learning model translation&lt;/li&gt;
+&lt;li&gt;On-Device training and inference frameworks under a computational budget of &amp;lt;256KB memory on CPUs running @20-120Mhz&lt;/li&gt;
+&lt;li&gt;MLOps &amp;amp; pipelines for data analysis and model deployment&lt;/li&gt;
+&lt;li&gt;Coordination with research and external partners for pre-developmental activities&lt;/li&gt;
+&lt;li&gt;Mentoring and internships for students on &lt;code&gt;Embedded-AI&lt;/code&gt; and application development topics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Tensorflow&lt;/code&gt; &lt;code&gt;PyTorch&lt;/code&gt; &lt;code&gt;MLOps&lt;/code&gt; &lt;code&gt;Python&lt;/code&gt; &lt;code&gt;TensorFlow&lt;/code&gt; &lt;code&gt;ARM-CMSIS&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;masters-thesis-student-june-2020---december-2020&#34;&gt;Master&amp;rsquo;s Thesis Student &lt;code&gt;June 2020 - December 2020&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bosch Sensortec GmbH&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Reutlingen, Germany&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Dissertation title:&lt;/code&gt; N-shot learning for motion series data&lt;/li&gt;
+&lt;li&gt;Conducted research on generalization of embeddings from few examples and classification of motion intensive human activities based on meta-metric learning strategies&lt;/li&gt;
+&lt;li&gt;Personalization and classification of new activities without re-training the model&lt;/li&gt;
+&lt;li&gt;CNN/LSTM based motion series feature extraction in the context of Triplet networks, Matching networks and Prototypical networks for resource constrained embedded inference&lt;/li&gt;
+&lt;li&gt;Framework &amp;amp; Tooling for data engineering and end-to-end network deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;MetaLearning&lt;/code&gt; &lt;code&gt;CNN&lt;/code&gt; &lt;code&gt;LSTM&lt;/code&gt; &lt;code&gt;FewShotLearning&lt;/code&gt; &lt;code&gt;DeepLearning&lt;/code&gt; &lt;code&gt;Python&lt;/code&gt; &lt;code&gt;PyTorch&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;working-student-march-2020---april-2020&#34;&gt;Working Student &lt;code&gt;March 2020 - April 2020&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bosch Sensortec GmbH&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Reutlingen, Germany&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extension to the internship work&lt;/li&gt;
+&lt;li&gt;External NAND flash management for data logging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;EmbeddedSystems&lt;/code&gt; &lt;code&gt;FlashManagement&lt;/code&gt; &lt;code&gt;C&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;research-internship-september-2019---february-2020&#34;&gt;Research Internship &lt;code&gt;September 2019 - February 2020&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bosch Sensortec GmbH&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Reutlingen, Germany&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algorithm development: Convolution neural network based heart rate monitoring system using Photoplethysmography and Accelerometers on wearable platform&lt;/li&gt;
+&lt;li&gt;Board bring up, Photoplethysmograph device driver development for real-time data acquisition&lt;/li&gt;
+&lt;li&gt;Development of event based neural network inference application on resource constrained embedded platform&lt;/li&gt;
+&lt;li&gt;External NAND flash management for data logging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;CNN&lt;/code&gt; &lt;code&gt;Wearables&lt;/code&gt; &lt;code&gt;DriverDevelopment&lt;/code&gt; &lt;code&gt;EmbeddedML&lt;/code&gt; &lt;code&gt;PPG&lt;/code&gt; &lt;code&gt;TensorFlow&lt;/code&gt; &lt;code&gt;C&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;senior-software-engineer-march-2015---september-2018&#34;&gt;Senior Software Engineer &lt;code&gt;March 2015 - September 2018&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Robert Bosch Engineering and Business Solutions&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Bengaluru, India&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Embedded Cybersecurity &amp;amp; Networking, Failsafe &amp;amp; Human Machine Interface development for Automotive safety systems - Electronic Stability Control and Electronic Brake booster (iBooster)&lt;/li&gt;
+&lt;li&gt;Realization of secured CAN communication between chassis ECUs adhering to JASPAR Cybersecurity standards and AUTOSAR Comstack specifications&lt;/li&gt;
+&lt;li&gt;Failure handling and HMI development in compliance with FMVSS/ISO26262&lt;/li&gt;
+&lt;li&gt;Development of software modules and methodologies to handle dynamic CAN/Diagnosis requirements for JOEMs&lt;/li&gt;
+&lt;li&gt;Hardware-Software for Actuation control systems&lt;/li&gt;
+&lt;li&gt;Process: Agile development and V-model&lt;/li&gt;
+&lt;li&gt;Deputations at Robert Bosch Corporation - Yokohama, Japan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Automotive&lt;/code&gt; &lt;code&gt;AUTOSAR&lt;/code&gt; &lt;code&gt;CAN&lt;/code&gt; &lt;code&gt;Cybersecurity&lt;/code&gt; &lt;code&gt;ISO26262&lt;/code&gt; &lt;code&gt;EmbeddedC&lt;/code&gt; &lt;code&gt;Agile&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;programmer-analyst-september-2013---february-2015&#34;&gt;Programmer Analyst &lt;code&gt;September 2013 - February 2015&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Cognizant Technology Solutions&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Chennai, India&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Development of mainframe applications for backend processing of banking transactions&lt;/li&gt;
+&lt;li&gt;Development of UI based instant communication application for customer services and personalized banking advertisements on android platform&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Android&lt;/code&gt; &lt;code&gt;Java&lt;/code&gt; &lt;code&gt;Banking&lt;/code&gt; &lt;code&gt;Mainframe&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;research-intern-august-2012---august-2013&#34;&gt;Research Intern &lt;code&gt;August 2012 - August 2013&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Crucible of Research and Innovation, P.E.S Institute of Technology&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Bangalore, India&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Research and development of embedded control algorithms for imaging satellite and application of computer vision in book shelving robot&lt;/li&gt;
+&lt;li&gt;Algorithm development: path planning for an autonomous library book shelving robot&lt;/li&gt;
+&lt;li&gt;Implementation of derived control system (from space dynamics simulation) to stabilize &lt;a href=&#34;https://en.wikipedia.org/wiki/PISat&#34;&gt;PISAT&lt;/a&gt; (an imaging satellite) in all three axes&lt;/li&gt;
+&lt;li&gt;Communication module development for data acquisition from multiple sensor systems of &lt;a href=&#34;https://en.wikipedia.org/wiki/PISat&#34;&gt;PISAT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Satellite&lt;/code&gt; &lt;code&gt;ControlSystems&lt;/code&gt; &lt;code&gt;ComputerVision&lt;/code&gt; &lt;code&gt;RoboticsResearch&lt;/code&gt; &lt;code&gt;EmbeddedC&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;h3 id=&#34;meng-embedded-systems-for-mechatronics-october-2018---present&#34;&gt;M.Eng Embedded Systems for Mechatronics &lt;code&gt;October 2018 - Present&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Fachhochschule Dortmund&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Dortmund, Germany&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;beng-in-telecommunications-august-2010---july-2013&#34;&gt;B.Eng in Telecommunications &lt;code&gt;August 2010 - July 2013&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;P.E.S Institute of Technology&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Bangalore, India&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;publication&#34;&gt;Publication&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Derived Control System on Low Resource Microcontroller and Optimization&lt;/strong&gt; - May 2014&lt;br&gt;
+&lt;em&gt;iCubesat.org&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://icubesat.org/wp-content/uploads/2014/05/icubesat-org_2014_b-3-3-3axis_bhat_201405261641_paper.pdf&#34;&gt;Implementation of Three Axes magnetic control mode for PISAT&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
