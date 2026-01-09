@@ -24,7 +24,6 @@ cacheDir = "cache"
 
 [params.logo]
   logoText = " Arjun Haritsa"
-  logoHomeLink = "/"
 
 [[menu.main]]
   identifier = "posts"
