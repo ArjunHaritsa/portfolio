@@ -1,0 +1,39 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Arjun's Portfolio"
+theme = "xterminal"
+pagination.pagerSize = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "blue"
+  ThemeVariant = "glossy-dark"
+  showMenuItems = 3
+  fullWidthTheme = false
+  centerTheme = true
+  readingTime = true
+
+[params.logo]
+  logoText = " Arjun Haritsa"
+  logoHomeLink = "/"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "󰗚 Posts"
+  url = "/posts"
+  weight = 3
+
+[[menu.main]]
+  identifier = "experience"
+  name = "󰅩 Experience"
+  url = "/experience"
+  weight = 5
+
+[[menu.main]]
+  identifier = "about"
+  name = "󰘨 About Me"
+  url = "/aboutme"
+  weight = 10

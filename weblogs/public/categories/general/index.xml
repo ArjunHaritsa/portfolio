@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Arjun&#39;s Portfolio</title>
+    <link>//localhost:1313/categories/general/</link>
+    <description>Recent content in General on Arjun&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[First Post] Writing - in the era of AI?</title>
+      <link>//localhost:1313/posts/firstpost/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/firstpost/</guid>
+      <description>&lt;h2 id=&#34;why-blogging&#34;&gt;Why blogging?&lt;/h2&gt;
+&lt;p&gt;Clearly this is an era of AI that we are witnessing with LLMs; simulating &amp;amp; mocking human intelligence as agents - text translation, text interpretation and text transformation is nearly a solved problem by today for an average Joe. Stack overflow is hitting all time low in their listings for any technical assistance post while LLMs are conjugating as senators - from code explanations to code reviews. Their performance is a topic for another day but in this era of &amp;ldquo;Ask Chat-GPT to create a concrete plan for 3 days road trip in Switzerland&amp;rdquo;, who has overcome their ADHD to read a blog post?&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;why-blogging&#34;&gt;Why blogging?&lt;/h2&gt;
+&lt;p&gt;Clearly this is an era of AI that we are witnessing with LLMs; simulating &amp;amp; mocking human intelligence as agents - text translation, text interpretation and text transformation is nearly a solved problem by today for an average Joe. Stack overflow is hitting all time low in their listings for any technical assistance post while LLMs are conjugating as senators - from code explanations to code reviews. Their performance is a topic for another day but in this era of &amp;ldquo;Ask Chat-GPT to create a concrete plan for 3 days road trip in Switzerland&amp;rdquo;, who has overcome their ADHD to read a blog post?&lt;/p&gt;
+&lt;p&gt;Well, I don&amp;rsquo;t intend to address the blog to anyone to be honest, it&amp;rsquo;s a note keeper for me; a salient friend who wires up some neurons in my brain to organize my thoughts into the tips of my fingers or to avail of the Feynman technique or to develop a mental clarity about a concept that I&amp;rsquo;m trying to understand and to avoid brain rot from the information overflow, scrolling over the social media postings.&lt;/p&gt;
+&lt;h2 id=&#34;whats-on-my-mind&#34;&gt;What&amp;rsquo;s on my mind?&lt;/h2&gt;
+&lt;p&gt;At times, I will write technical contents of &lt;code&gt;Math&lt;/code&gt; behind &lt;code&gt;Deep Learning&lt;/code&gt;, &lt;code&gt;C++&lt;/code&gt; and software frameworks. I&amp;rsquo;m an advocate of philosophy - &lt;code&gt;Vedanta&lt;/code&gt; has impeccable sources of wisdom to ponder and large verses to explain. I will try to pen down contextual translations of the verses to &amp;ldquo;the generation of science&amp;rdquo; in a comprehensible manner; and in ಕನ್ನಡ, some of my poems and short stories will be posted.&lt;/p&gt;
+&lt;h2 id=&#34;who-ought-to-be-the-listeners&#34;&gt;Who ought to be the listeners?&lt;/h2&gt;
+&lt;p&gt;The universe and serendipity. One who pops for a reference, one who wants to discuss further on a post and for the ones that want to fix the mistakes in my typos or equations.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

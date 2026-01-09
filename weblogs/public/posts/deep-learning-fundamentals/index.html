@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Deep Learning Fundamentals: A Comprehensive Guide :: Arjun&#39;s Portfolio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Understanding Deep Learning Deep learning has revolutionized the field of artificial intelligence, enabling machines to learn from vast amounts of data and make intelligent decisions. This post explores the fundamental concepts that make deep learning such a powerful tool in modern AI applications.
+What is Deep Learning? Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence &ldquo;deep&rdquo;) to progressively extract higher-level features from raw input. Unlike traditional machine learning algorithms, deep learning can automatically discover the representations needed for feature detection or classification from raw data.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/deep-learning-fundamentals/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/blue.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Deep Learning Fundamentals: A Comprehensive Guide">
+<meta property="og:description" content="Understanding Deep Learning Deep learning has revolutionized the field of artificial intelligence, enabling machines to learn from vast amounts of data and make intelligent decisions. This post explores the fundamental concepts that make deep learning such a powerful tool in modern AI applications.
+What is Deep Learning? Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence &ldquo;deep&rdquo;) to progressively extract higher-level features from raw input. Unlike traditional machine learning algorithms, deep learning can automatically discover the representations needed for feature detection or classification from raw data.
+" />
+<meta property="og:url" content="//localhost:1313/posts/deep-learning-fundamentals/" />
+<meta property="og:site_name" content="Arjun&#39;s Portfolio" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+  <meta property="article:section" content="Technology" />
+
+  <meta property="article:section" content="AI" />
+
+
+  <meta property="article:published_time" content="2025-12-15 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fira-code@5.0.18/index.min.css">
+<style>
+  @font-face {
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FiraCode/Regular/FiraCodeNerdFont-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FiraCode/Bold/FiraCodeNerdFont-Bold.ttf') format('truetype');
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const postCountElement = document.getElementById('post-count');
+  if (postCountElement) {
+    
+    fetch('/posts/')
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const postCards = doc.querySelectorAll('.post-card');
+        const count = postCards.length;
+        
+        
+        let current = 0;
+        const increment = count / 30;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= count) {
+            postCountElement.textContent = count;
+            clearInterval(timer);
+          } else {
+            postCountElement.textContent = Math.floor(current);
+          }
+        }, 30);
+      })
+      .catch(() => {
+        postCountElement.textContent = 'several';
+      });
+  }
+});
+</script>
+
+
+  
+
+
+</head>
+<body class="blueglossy-dark">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <div class="logo">
+  <button id="color-theme-toggle" class="logo-segment logo-segment-1" aria-label="Cycle color theme" title="Change Theme Color">
+    <span class="logo-icon"></span>
+  </button>
+  <span class="logo-separator"></span>
+  <a href="/" class="logo-segment logo-segment-2">
+    <span class="logo-text"> Arjun Haritsa</span>
+  </a>
+  <span class="logo-separator-end"></span>
+</div>
+
+    </div>
+    <div class="header__animation">
+      <span class="animated-dot animated-dot-1">•</span>
+      <span class="animated-dot animated-dot-2">•</span>
+      <span class="animated-dot animated-dot-3">•</span>
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/posts">󰗚 Posts</a></li>
+        
+      
+        
+          <li><a href="/experience">󰅩 Experience</a></li>
+        
+      
+        
+          <li><a href="/aboutme">󰘨 About Me</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+    <div class="header__controls">
+      <div class="brightness-toggle-container">
+        <input id="brightness-toggle" type="checkbox" class="brightness-switch" aria-label="Toggle brightness" />
+        <label for="brightness-toggle" class="brightness-switch__label" aria-hidden="true" title="Toggle Brightness">
+          <span class="brightness-icon">👁</span>
+        </label>
+      </div>
+      
+      <div class="header__toggle">
+        <input id="theme-toggle" type="checkbox" class="toggle-switch" aria-label="Toggle theme" />
+        <label for="theme-toggle" class="toggle-switch__label" aria-hidden="true">
+          <span class="toggle-switch__track"></span>
+          <span class="toggle-switch__thumb"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="header__separator">
+    <div class="separator-line"></div>
+    <span class="separator-icon"></span>
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/posts" >󰗚 Posts</a></li>
+        
+      
+        
+          <li><a href="/experience" >󰅩 Experience</a></li>
+        
+      
+        
+          <li><a href="/aboutme" >󰘨 About Me</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post" data-language="en" >
+  
+
+
+  
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/deep-learning-fundamentals/">Deep Learning Fundamentals: A Comprehensive Guide</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-12-15</time>
+    
+<span class="post-reading-time">4 min read (648 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/deeplearning/">DeepLearning</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/ai/">AI</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/neuralnetworks/">NeuralNetworks</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/machinelearning/">MachineLearning</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/python/">Python</a>&nbsp;
+      
+    </span>
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="understanding-deep-learning">Understanding Deep Learning<a href="#understanding-deep-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Deep learning has revolutionized the field of artificial intelligence, enabling machines to learn from vast amounts of data and make intelligent decisions. This post explores the fundamental concepts that make deep learning such a powerful tool in modern AI applications.</p>
+<h2 id="what-is-deep-learning">What is Deep Learning?<a href="#what-is-deep-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence &ldquo;deep&rdquo;) to progressively extract higher-level features from raw input. Unlike traditional machine learning algorithms, deep learning can automatically discover the representations needed for feature detection or classification from raw data.</p>
+<p>The key innovation of deep learning lies in its ability to:</p>
+<ul>
+<li>Learn hierarchical representations of data</li>
+<li>Automatically extract features without manual engineering</li>
+<li>Scale performance with increased data and computational power</li>
+<li>Handle unstructured data like images, audio, and text</li>
+</ul>
+<h2 id="neural-network-architecture">Neural Network Architecture<a href="#neural-network-architecture" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>At the heart of deep learning are neural networks, computational models inspired by the human brain. A typical neural network consists of:</p>
+<h3 id="input-layer">Input Layer<a href="#input-layer" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The input layer receives raw data, whether it&rsquo;s pixels from an image, words from a sentence, or sensor readings from a device. Each input feature is represented as a node in this layer.</p>
+<h3 id="hidden-layers">Hidden Layers<a href="#hidden-layers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Hidden layers are where the magic happens. These intermediate layers transform the input data through a series of weighted connections and activation functions. Deep networks may have dozens or even hundreds of hidden layers, each learning increasingly abstract representations.</p>
+<h3 id="output-layer">Output Layer<a href="#output-layer" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The output layer produces the final prediction or classification. For a binary classification task, this might be a single node with a probability. For multi-class problems, there would be one node per class.</p>
+<h2 id="key-components">Key Components<a href="#key-components" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="activation-functions">Activation Functions<a href="#activation-functions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Activation functions introduce non-linearity into the network, allowing it to learn complex patterns:</p>
+<ul>
+<li><strong>ReLU (Rectified Linear Unit)</strong>: Most commonly used, computationally efficient</li>
+<li><strong>Sigmoid</strong>: Outputs values between 0 and 1, useful for probabilities</li>
+<li><strong>Tanh</strong>: Outputs values between -1 and 1, zero-centered</li>
+<li><strong>Softmax</strong>: Used in output layer for multi-class classification</li>
+</ul>
+<h3 id="loss-functions">Loss Functions<a href="#loss-functions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Loss functions measure how well the network&rsquo;s predictions match the actual labels:</p>
+<ul>
+<li><strong>Cross-Entropy Loss</strong>: Standard for classification tasks</li>
+<li><strong>Mean Squared Error</strong>: Common for regression problems</li>
+<li><strong>Hinge Loss</strong>: Used in support vector machines and some neural networks</li>
+</ul>
+<h3 id="optimization-algorithms">Optimization Algorithms<a href="#optimization-algorithms" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Optimizers update the network&rsquo;s weights to minimize the loss:</p>
+<ul>
+<li><strong>SGD (Stochastic Gradient Descent)</strong>: Simple but effective</li>
+<li><strong>Adam</strong>: Adaptive learning rate, most popular choice</li>
+<li><strong>RMSprop</strong>: Good for recurrent neural networks</li>
+<li><strong>AdaGrad</strong>: Adapts learning rate for sparse features</li>
+</ul>
+<h2 id="training-process">Training Process<a href="#training-process" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Training a deep learning model involves several critical steps:</p>
+<ol>
+<li><strong>Forward Propagation</strong>: Input data flows through the network, and predictions are generated</li>
+<li><strong>Loss Calculation</strong>: The difference between predictions and actual values is computed</li>
+<li><strong>Backward Propagation</strong>: Gradients are calculated and propagated backward through the network</li>
+<li><strong>Weight Update</strong>: Network parameters are adjusted to minimize the loss</li>
+<li><strong>Iteration</strong>: This process repeats for multiple epochs until convergence</li>
+</ol>
+<h2 id="common-challenges">Common Challenges<a href="#common-challenges" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="overfitting">Overfitting<a href="#overfitting" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>When a model learns the training data too well, including its noise and outliers, it fails to generalize to new data. Solutions include:</p>
+<ul>
+<li>Dropout layers</li>
+<li>L1/L2 regularization</li>
+<li>Early stopping</li>
+<li>Data augmentation</li>
+</ul>
+<h3 id="vanishing-gradients">Vanishing Gradients<a href="#vanishing-gradients" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>In very deep networks, gradients can become extremely small, preventing effective learning in early layers. Modern architectures address this with:</p>
+<ul>
+<li>Residual connections (ResNet)</li>
+<li>Batch normalization</li>
+<li>Better activation functions (ReLU vs Sigmoid)</li>
+</ul>
+<h3 id="computational-requirements">Computational Requirements<a href="#computational-requirements" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Deep learning models require significant computational resources. Strategies to manage this:</p>
+<ul>
+<li>GPU/TPU acceleration</li>
+<li>Model compression and pruning</li>
+<li>Knowledge distillation</li>
+<li>Quantization</li>
+</ul>
+<h2 id="applications">Applications<a href="#applications" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Deep learning has transformed numerous industries:</p>
+<ul>
+<li><strong>Computer Vision</strong>: Image classification, object detection, facial recognition</li>
+<li><strong>Natural Language Processing</strong>: Machine translation, sentiment analysis, chatbots</li>
+<li><strong>Healthcare</strong>: Disease diagnosis, drug discovery, medical imaging</li>
+<li><strong>Autonomous Vehicles</strong>: Self-driving cars, drones</li>
+<li><strong>Robotics</strong>: Motion planning, manipulation, perception</li>
+<li><strong>Finance</strong>: Fraud detection, algorithmic trading, risk assessment</li>
+</ul>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Deep learning continues to push the boundaries of what&rsquo;s possible in artificial intelligence. As computational power increases and new architectures emerge, we can expect even more impressive applications. Understanding these fundamentals provides a solid foundation for exploring advanced topics and implementing deep learning solutions.</p>
+<p><code>#DeepLearning</code> <code>#AI</code> <code>#NeuralNetworks</code> <code>#MachineLearning</code> <code>#Python</code> <code>#TensorFlow</code> <code>#PyTorch</code></p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h"></span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="//localhost:1313/posts/why-a-blog/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Why a blog, in the era of AI?</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="//localhost:1313/posts/linear-algebra-ml/">
+                <span class="button__text">Linear Algebra for Machine Learning</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    <div class="comments-section">
+  <script src="https://giscus.app/client.js"
+    data-repo="mirus-ua/hugo-theme-re-terminal"
+    data-repo-id=""
+    data-category="Comments"
+    data-category-id=""
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

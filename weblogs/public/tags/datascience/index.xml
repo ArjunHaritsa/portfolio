@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataScience on Arjun&#39;s Portfolio</title>
+    <link>//localhost:1313/tags/datascience/</link>
+    <description>Recent content in DataScience on Arjun&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/datascience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Algebra for Machine Learning</title>
+      <link>//localhost:1313/posts/linear-algebra-ml/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/linear-algebra-ml/</guid>
+      <description>&lt;h1 id=&#34;linear-algebra-the-foundation-of-machine-learning&#34;&gt;Linear Algebra: The Foundation of Machine Learning&lt;/h1&gt;
+&lt;p&gt;Linear algebra is the mathematical backbone of machine learning and data science. Understanding vectors, matrices, and their operations is essential for grasping how machine learning algorithms work under the hood.&lt;/p&gt;
+&lt;h2 id=&#34;vectors-and-vector-spaces&#34;&gt;Vectors and Vector Spaces&lt;/h2&gt;
+&lt;p&gt;A vector is an ordered array of numbers representing a point or direction in space. In machine learning, vectors represent features, data points, or model parameters.&lt;/p&gt;
+&lt;h3 id=&#34;vector-operations&#34;&gt;Vector Operations&lt;/h3&gt;
+&lt;p&gt;The dot product of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;linear-algebra-the-foundation-of-machine-learning&#34;&gt;Linear Algebra: The Foundation of Machine Learning&lt;/h1&gt;
+&lt;p&gt;Linear algebra is the mathematical backbone of machine learning and data science. Understanding vectors, matrices, and their operations is essential for grasping how machine learning algorithms work under the hood.&lt;/p&gt;
+&lt;h2 id=&#34;vectors-and-vector-spaces&#34;&gt;Vectors and Vector Spaces&lt;/h2&gt;
+&lt;p&gt;A vector is an ordered array of numbers representing a point or direction in space. In machine learning, vectors represent features, data points, or model parameters.&lt;/p&gt;
+&lt;h3 id=&#34;vector-operations&#34;&gt;Vector Operations&lt;/h3&gt;
+&lt;p&gt;The dot product of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:&lt;/p&gt;
+&lt;p&gt;$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \cdots + a_nb_n$$&lt;/p&gt;
+&lt;p&gt;The magnitude (or norm) of a vector $\mathbf{v}$ is:&lt;/p&gt;
+&lt;p&gt;$$|\mathbf{v}| = \sqrt{\sum_{i=1}^{n} v_i^2} = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2}$$&lt;/p&gt;
+&lt;p&gt;Vector normalization produces a unit vector:&lt;/p&gt;
+&lt;p&gt;$$\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}$$&lt;/p&gt;
+&lt;h2 id=&#34;matrices-and-matrix-operations&#34;&gt;Matrices and Matrix Operations&lt;/h2&gt;
+&lt;p&gt;Matrices are two-dimensional arrays of numbers, fundamental to representing and transforming data in machine learning.&lt;/p&gt;
+&lt;h3 id=&#34;matrix-multiplication&#34;&gt;Matrix Multiplication&lt;/h3&gt;
+&lt;p&gt;For matrices $A_{m \times n}$ and $B_{n \times p}$, the product $C = AB$ has dimensions $m \times p$:&lt;/p&gt;
+&lt;p&gt;$$C_{ij} = \sum_{k=1}^{n} A_{ik}B_{kj}$$&lt;/p&gt;
+&lt;h3 id=&#34;important-matrix-properties&#34;&gt;Important Matrix Properties&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Definition&lt;/th&gt;
+          &lt;th&gt;Formula&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Transpose&lt;/td&gt;
+          &lt;td&gt;Flip rows and columns&lt;/td&gt;
+          &lt;td&gt;$(A^T)&lt;em&gt;{ij} = A&lt;/em&gt;{ji}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Symmetric&lt;/td&gt;
+          &lt;td&gt;Equals its transpose&lt;/td&gt;
+          &lt;td&gt;$A = A^T$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Identity&lt;/td&gt;
+          &lt;td&gt;Diagonal matrix of ones&lt;/td&gt;
+          &lt;td&gt;$AI = IA = A$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Inverse&lt;/td&gt;
+          &lt;td&gt;Multiplication yields identity&lt;/td&gt;
+          &lt;td&gt;$AA^{-1} = A^{-1}A = I$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Determinant&lt;/td&gt;
+          &lt;td&gt;Scalar value&lt;/td&gt;
+          &lt;td&gt;$\det(AB) = \det(A)\det(B)$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;matrix-decompositions&#34;&gt;Matrix Decompositions&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Eigenvalue Decomposition&lt;/strong&gt;: For a square matrix $A$:&lt;/p&gt;
+&lt;p&gt;$$A = Q\Lambda Q^{-1}$$&lt;/p&gt;
+&lt;p&gt;where $Q$ contains eigenvectors and $\Lambda$ is a diagonal matrix of eigenvalues.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Singular Value Decomposition (SVD)&lt;/strong&gt;: For any matrix $A_{m \times n}$:&lt;/p&gt;
+&lt;p&gt;$$A = U\Sigma V^T$$&lt;/p&gt;
+&lt;p&gt;where $U$ and $V$ are orthogonal matrices and $\Sigma$ contains singular values.&lt;/p&gt;
+&lt;h2 id=&#34;applications-in-machine-learning&#34;&gt;Applications in Machine Learning&lt;/h2&gt;
+&lt;h3 id=&#34;linear-regression&#34;&gt;Linear Regression&lt;/h3&gt;
+&lt;p&gt;The linear regression solution minimizes the squared error:&lt;/p&gt;
+&lt;p&gt;$$\mathbf{w}^* = (X^TX)^{-1}X^T\mathbf{y}$$&lt;/p&gt;
+&lt;p&gt;where $X$ is the feature matrix and $\mathbf{y}$ is the target vector.&lt;/p&gt;
+&lt;h3 id=&#34;principal-component-analysis-pca&#34;&gt;Principal Component Analysis (PCA)&lt;/h3&gt;
+&lt;p&gt;PCA finds the directions of maximum variance:&lt;/p&gt;
+&lt;p&gt;$$\text{Cov}(X) = \frac{1}{n}X^TX$$&lt;/p&gt;
+&lt;p&gt;The eigenvectors of the covariance matrix are the principal components.&lt;/p&gt;
+&lt;h3 id=&#34;neural-network-forward-pass&#34;&gt;Neural Network Forward Pass&lt;/h3&gt;
+&lt;p&gt;The output of a layer can be expressed as:&lt;/p&gt;
+&lt;p&gt;$$\mathbf{h} = \sigma(W\mathbf{x} + \mathbf{b})$$&lt;/p&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$W$ is the weight matrix&lt;/li&gt;
+&lt;li&gt;$\mathbf{x}$ is the input vector&lt;/li&gt;
+&lt;li&gt;$\mathbf{b}$ is the bias vector&lt;/li&gt;
+&lt;li&gt;$\sigma$ is the activation function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;vector-spaces-and-subspaces&#34;&gt;Vector Spaces and Subspaces&lt;/h2&gt;
+&lt;p&gt;A vector space $V$ over field $\mathbb{F}$ satisfies:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Closure under addition&lt;/strong&gt;: $\mathbf{u} + \mathbf{v} \in V$ for all $\mathbf{u}, \mathbf{v} \in V$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Closure under scalar multiplication&lt;/strong&gt;: $c\mathbf{v} \in V$ for all $c \in \mathbb{F}$ and $\mathbf{v} \in V$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Existence of zero vector&lt;/strong&gt;: $\mathbf{0} \in V$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Existence of additive inverse&lt;/strong&gt;: For each $\mathbf{v} \in V$, there exists $-\mathbf{v} \in V$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;linear-independence&#34;&gt;Linear Independence&lt;/h3&gt;
+&lt;p&gt;Vectors $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ are linearly independent if:&lt;/p&gt;
+&lt;p&gt;$$c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_n\mathbf{v}_n = \mathbf{0}$$&lt;/p&gt;
+&lt;p&gt;implies $c_1 = c_2 = \cdots = c_n = 0$.&lt;/p&gt;
+&lt;h3 id=&#34;rank-and-dimensionality&#34;&gt;Rank and Dimensionality&lt;/h3&gt;
+&lt;p&gt;The rank of a matrix is the dimension of its column space:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Rank Type&lt;/th&gt;
+          &lt;th&gt;Definition&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Full rank&lt;/td&gt;
+          &lt;td&gt;$\text{rank}(A) = \min(m, n)$ for $A_{m \times n}$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Rank deficient&lt;/td&gt;
+          &lt;td&gt;$\text{rank}(A) &amp;lt; \min(m, n)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Column rank&lt;/td&gt;
+          &lt;td&gt;Dimension of column space&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Row rank&lt;/td&gt;
+          &lt;td&gt;Dimension of row space&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;norms-and-distance-metrics&#34;&gt;Norms and Distance Metrics&lt;/h2&gt;
+&lt;p&gt;Different norms measure vector magnitude differently:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;$L^1$ norm (Manhattan distance)&lt;/strong&gt;:
+$$|\mathbf{x}|&lt;em&gt;1 = \sum&lt;/em&gt;{i=1}^{n} |x_i|$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;$L^2$ norm (Euclidean distance)&lt;/strong&gt;:
+$$|\mathbf{x}|&lt;em&gt;2 = \sqrt{\sum&lt;/em&gt;{i=1}^{n} x_i^2}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;$L^\infty$ norm (Maximum norm)&lt;/strong&gt;:
+$$|\mathbf{x}|_\infty = \max_i |x_i|$$&lt;/p&gt;
+&lt;h2 id=&#34;orthogonality-and-projections&#34;&gt;Orthogonality and Projections&lt;/h2&gt;
+&lt;p&gt;Two vectors $\mathbf{u}$ and $\mathbf{v}$ are orthogonal if:&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u} \cdot \mathbf{v} = 0$$&lt;/p&gt;
+&lt;p&gt;The projection of $\mathbf{v}$ onto $\mathbf{u}$ is:&lt;/p&gt;
+&lt;p&gt;$$\text{proj}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}|^2}\mathbf{u}$$&lt;/p&gt;
+&lt;h2 id=&#34;computational-complexity&#34;&gt;Computational Complexity&lt;/h2&gt;
+&lt;p&gt;Understanding the computational cost of operations is crucial:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Operation&lt;/th&gt;
+          &lt;th&gt;Complexity&lt;/th&gt;
+          &lt;th&gt;Notes&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Vector addition&lt;/td&gt;
+          &lt;td&gt;$O(n)$&lt;/td&gt;
+          &lt;td&gt;Element-wise operation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Dot product&lt;/td&gt;
+          &lt;td&gt;$O(n)$&lt;/td&gt;
+          &lt;td&gt;Sum of products&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Matrix multiplication&lt;/td&gt;
+          &lt;td&gt;$O(n^3)$&lt;/td&gt;
+          &lt;td&gt;For $n \times n$ matrices&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Matrix inversion&lt;/td&gt;
+          &lt;td&gt;$O(n^3)$&lt;/td&gt;
+          &lt;td&gt;Using Gaussian elimination&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Eigenvalue decomposition&lt;/td&gt;
+          &lt;td&gt;$O(n^3)$&lt;/td&gt;
+          &lt;td&gt;Iterative algorithms&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SVD&lt;/td&gt;
+          &lt;td&gt;$O(mn^2)$&lt;/td&gt;
+          &lt;td&gt;For $m \times n$ matrix with $m &amp;gt; n$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Linear algebra provides the essential mathematical tools for understanding and implementing machine learning algorithms. From simple linear regression to complex deep neural networks, these concepts form the foundation of modern data science. Mastering linear algebra opens the door to deeper understanding of optimization, dimensionality reduction, and advanced ML techniques.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#Mathematics&lt;/code&gt; &lt;code&gt;#LinearAlgebra&lt;/code&gt; &lt;code&gt;#MachineLearning&lt;/code&gt; &lt;code&gt;#DataScience&lt;/code&gt; &lt;code&gt;#Optimization&lt;/code&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
