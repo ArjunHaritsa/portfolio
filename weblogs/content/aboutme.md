@@ -1,7 +1,7 @@
 +++
 title = "About Me"
 hideComments = true
-cover = "/images/profilephoto-como.jpg"
+cover = "images/profilephoto-como.jpg"
 coverCaption = "It's not often the destination but the people that you journey with..."
 profileCover = true
 readingTime = false
