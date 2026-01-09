@@ -7,6 +7,10 @@ pagination.pagerSize = 5
 [markup.goldmark.renderer]
   unsafe = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
   contentTypeName = "posts"
   themeColor = "blue"
