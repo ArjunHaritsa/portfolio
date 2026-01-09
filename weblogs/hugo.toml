@@ -7,6 +7,8 @@ pagination.pagerSize = 5
 [markup.goldmark.renderer]
   unsafe = true
 
+cacheDir = "cache"
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
