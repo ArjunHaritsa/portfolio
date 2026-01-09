@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://arjunharitsa.github.io/portfolio/"
 languageCode = "en-us"
 title = "Arjun's Portfolio"
 theme = "xterminal"
