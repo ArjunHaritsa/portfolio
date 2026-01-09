@@ -1,0 +1,184 @@
+{{ define "main" }}
+<div class="posts-page">
+  
+  <div class="posts-controls">
+    <div class="search-bar">
+      <input type="text" 
+             id="search-input" 
+             placeholder="Search by #tags or words..." 
+             aria-label="Search posts">
+      <span class="search-icon">󰱼</span>
+    </div>
+    
+    <div class="language-filter">
+      <label for="language-select">Language:</label>
+      <select id="language-select" aria-label="Filter by language">
+        <option value="all">All</option>
+        <option value="en">English</option>
+        <option value="kn">ಕನ್ನಡ</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="category-filter" id="category-filter" style="display: none;">
+    <label>Categories:</label>
+    <div class="category-buttons" id="category-buttons"></div>
+  </div>
+  
+  <div class="posts-list" id="posts-list">
+    {{ range .Pages }}
+      <article class="post-card" 
+               data-language="{{ .Params.language }}" 
+               data-tags="{{ delimit .Params.tags " " }}"
+               data-categories="{{ delimit .Params.categories " " }}"
+               data-title="{{ .Title }}"
+               data-content="{{ .Summary }}">
+        <div class="post-card-header">
+          <h2 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+        </div>
+        
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+          {{ if .Params.categories }}
+            <span class="post-categories">
+              {{ range .Params.categories }}
+                <span class="category-badge">{{ . }}</span>
+              {{ end }}
+            </span>
+          {{ end }}
+        </div>
+        
+        <div class="post-summary" {{ if eq .Params.language "kn" }}lang="kn"{{ end }}>
+          {{ .Summary }}
+        </div>
+        
+        {{ if .Params.tags }}
+          <div class="post-tags">
+            {{ range .Params.tags }}
+              <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+        
+        <a href="{{ .Permalink }}" class="read-more">Read More →</a>
+      </article>
+    {{ end }}
+  </div>
+  
+  <div id="no-results" class="no-results" style="display: none;">
+    <p>No posts found matching your search.</p>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  const languageSelect = document.getElementById('language-select');
+  const postsList = document.getElementById('posts-list');
+  const noResults = document.getElementById('no-results');
+  const categoryFilter = document.getElementById('category-filter');
+  const categoryButtons = document.getElementById('category-buttons');
+  const posts = Array.from(document.querySelectorAll('.post-card'));
+  
+  let currentLanguage = 'all';
+  let currentCategory = 'all';
+  let currentSearch = '';
+  
+  // Build category list based on language
+  function updateCategories() {
+    const categories = new Set();
+    posts.forEach(post => {
+      const postLang = post.dataset.language;
+      const postCategories = post.dataset.categories.split(' ').filter(c => c);
+      
+      if (currentLanguage === 'all' || postLang === currentLanguage) {
+        postCategories.forEach(cat => categories.add(cat));
+      }
+    });
+    
+    categoryButtons.innerHTML = '<button class="category-btn active" data-category="all">All</button>';
+    categories.forEach(cat => {
+      const btn = document.createElement('button');
+      btn.className = 'category-btn';
+      btn.dataset.category = cat;
+      btn.textContent = cat;
+      categoryButtons.appendChild(btn);
+    });
+    
+    categoryFilter.style.display = categories.size > 0 ? 'block' : 'none';
+    
+    // Add click handlers
+    categoryButtons.querySelectorAll('.category-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        categoryButtons.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentCategory = this.dataset.category;
+        filterPosts();
+      });
+    });
+  }
+  
+  function filterPosts() {
+    let visibleCount = 0;
+    
+    posts.forEach(post => {
+      const postLang = post.dataset.language;
+      const postTags = post.dataset.tags.toLowerCase();
+      const postTitle = post.dataset.title.toLowerCase();
+      const postContent = post.dataset.content.toLowerCase();
+      const postCategories = post.dataset.categories.split(' ').filter(c => c);
+      
+      let show = true;
+      
+      // Language filter
+      if (currentLanguage !== 'all' && postLang !== currentLanguage) {
+        show = false;
+      }
+      
+      // Category filter
+      if (show && currentCategory !== 'all' && !postCategories.includes(currentCategory)) {
+        show = false;
+      }
+      
+      // Search filter
+      if (show && currentSearch) {
+        const searchTerms = currentSearch.toLowerCase().split(' ').filter(s => s);
+        show = searchTerms.every(term => {
+          // Remove # from search term if present
+          const cleanTerm = term.replace(/^#/, '');
+          return postTags.includes(cleanTerm) || 
+                 postTitle.includes(cleanTerm) || 
+                 postContent.includes(cleanTerm);
+        });
+      }
+      
+      post.style.display = show ? 'block' : 'none';
+      if (show) visibleCount++;
+    });
+    
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+  
+  // Event listeners
+  languageSelect.addEventListener('change', function() {
+    currentLanguage = this.value;
+    currentCategory = 'all';
+    updateCategories();
+    filterPosts();
+  });
+  
+  searchInput.addEventListener('input', function() {
+    currentSearch = this.value;
+    filterPosts();
+  });
+  
+  // Initialize
+  updateCategories();
+});
+</script>
+
+{{ end }}

@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article class="aboutme-page">
+  <div class="aboutme-header-section">
+    {{- if .Params.cover -}}
+      <div class="header-photo">
+        {{- $cover := "" -}}
+        {{- if .Resources.GetMatch .Params.Cover }}
+          {{- $cover = (.Resources.GetMatch .Params.Cover).RelPermalink -}}
+        {{- else -}}
+          {{- $cover = relURL .Params.Cover -}}
+        {{- end -}}
+        {{- if $cover -}}
+          <figure class="profile-figure">
+            <img src="{{ $cover }}" 
+                 class="profile-photo" 
+                 alt="{{ .Title | plainify }}" />
+            
+            {{- if .Params.profileCover -}}
+              <div class="post-count-container">
+                <span class="post-count-label">Posts</span>
+                <span class="post-count-number" id="post-count">...</span>
+              </div>
+            {{- end -}}
+            
+            {{- if .Params.coverCaption -}}
+              <figcaption class="profile-caption typing-caption">{{ .Params.coverCaption | safeHTML }}</figcaption>
+            {{- end -}}
+          </figure>
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+
+  <div class="aboutme-content">
+    {{ .Content }}
+  </div>
+
+</article>
+{{ end }}

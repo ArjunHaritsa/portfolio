@@ -1,0 +1,125 @@
+{{ define "main" }}
+<article class="experience-page">
+  <h1 class="experience-title">
+    {{ .Title | markdownify }}
+  </h1>
+
+  <div class="experience-header-section">
+    {{- if .Params.cover -}}
+      <div class="header-photo">
+        {{- $cover := "" -}}
+        {{- if .Resources.GetMatch .Params.Cover }}
+          {{- $cover = (.Resources.GetMatch .Params.Cover).RelPermalink -}}
+        {{- else -}}
+          {{- $cover = absURL .Params.Cover -}}
+        {{- end -}}
+        {{- if $cover -}}
+          {{- if .Params.coverCaption -}}
+            <figure>
+              <img src="{{ $cover }}" 
+                   class="experience-photo" 
+                   alt="{{ .Title | plainify }}" />
+              <figcaption class="center">{{ .Params.coverCaption | safeHTML }}</figcaption>
+            </figure>
+          {{- else -}}
+            <img src="{{ $cover }}" 
+                 class="experience-photo" 
+                 alt="{{ .Title | plainify }}" />
+          {{- end -}}
+        {{- end -}}
+      </div>
+    {{- end -}}
+    
+    <div class="header-info">
+      {{- if .Params.candidateName -}}
+      <h2 class="candidate-name">{{ .Params.candidateName }}</h2>
+      {{- end -}}
+      {{- if .Params.currentRole -}}
+      <p class="current-role">{{ .Params.currentRole }}</p>
+      {{- end -}}
+      {{- if .Params.shortInfo -}}
+      <p class="current-duration">{{ .Params.shortInfo }}</p>
+      {{- end -}}
+      
+      {{- if .Params.showcaseLanguages -}}
+      <div class="language-showcase skills-overview">
+        <span class="showcase-label">{{ .Params.showcaseText }}  </span>
+        <span class="showcase-languages">
+          {{- range $index, $lang := .Params.showcaseLanguages -}}
+          <span class="language-item{{ if eq $index 0 }} active{{ end }}">{{ $lang }}</span>
+          {{- end -}}
+        </span>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+
+  <div class="experience-content">
+    {{ .Content }}
+  </div>
+
+</article>
+
+<script>
+// Make job sections collapsible
+document.addEventListener('DOMContentLoaded', function() {
+  const content = document.querySelector('.experience-content');
+  const h3Elements = content.querySelectorAll('h3');
+  
+  let isFirst = true;
+  h3Elements.forEach(h3 => {
+    // Check if this h3 has a date (code element)
+    if (h3.querySelector('code')) {
+      const details = document.createElement('details');
+      if (isFirst) {
+        details.setAttribute('open', '');
+        isFirst = false;
+      }
+      
+      const summary = document.createElement('summary');
+      
+      // Move h3 and following strong/em into summary
+      let currentElement = h3;
+      const elementsToMove = [h3];
+      
+      // Get the next sibling elements (strong for company, em for location)
+      while (currentElement.nextElementSibling && 
+             (currentElement.nextElementSibling.tagName === 'STRONG' || 
+              currentElement.nextElementSibling.tagName === 'EM' || 
+              currentElement.nextElementSibling.tagName === 'P' && 
+              currentElement.nextElementSibling.querySelector('strong, em'))) {
+        currentElement = currentElement.nextElementSibling;
+        elementsToMove.push(currentElement);
+        if (currentElement.tagName === 'EM') break; // Stop after location
+      }
+      
+      // Insert details before h3
+      h3.parentNode.insertBefore(details, h3);
+      details.appendChild(summary);
+      
+      // Move h3 and company/location into summary
+      elementsToMove.forEach(el => {
+        summary.appendChild(el.cloneNode(true));
+        el.style.display = 'none'; // Hide originals
+      });
+      
+      // Move remaining content (ul, p) into details
+      currentElement = elementsToMove[elementsToMove.length - 1];
+      while (currentElement.nextElementSibling && 
+             currentElement.nextElementSibling.tagName !== 'H3' && 
+             currentElement.nextElementSibling.tagName !== 'H2') {
+        const next = currentElement.nextElementSibling;
+        if (next.style.display !== 'none') {
+          details.appendChild(next);
+        } else {
+          currentElement = next;
+        }
+      }
+      
+      // Remove the hidden originals
+      elementsToMove.forEach(el => el.remove());
+    }
+  });
+});
+</script>
+{{ end }}
