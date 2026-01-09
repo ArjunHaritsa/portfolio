@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arjun&#39;s Portfolio</title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:1313/portfolio/</link>
     <description>Recent content on Arjun&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[First Post] Writing - in the era of AI?</title>
-      <link>//localhost:1313/posts/firstpost/</link>
+      <link>http://localhost:1313/portfolio/posts/firstpost/</link>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/firstpost/</guid>
+      <guid>http://localhost:1313/portfolio/posts/firstpost/</guid>
       <description>&lt;h2 id=&#34;why-blogging&#34;&gt;Why blogging?&lt;/h2&gt;
 &lt;p&gt;Clearly this is an era of AI that we are witnessing with LLMs; simulating &amp;amp; mocking human intelligence as agents - text translation, text interpretation and text transformation is nearly a solved problem by today for an average Joe. Stack overflow is hitting all time low in their listings for any technical assistance post while LLMs are conjugating as senators - from code explanations to code reviews. Their performance is a topic for another day but in this era of &amp;ldquo;Ask Chat-GPT to create a concrete plan for 3 days road trip in Switzerland&amp;rdquo;, who has overcome their ADHD to read a blog post?&lt;/p&gt;</description>
       <content>&lt;h2 id=&#34;why-blogging&#34;&gt;Why blogging?&lt;/h2&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>About Me</title>
-      <link>//localhost:1313/aboutme/</link>
+      <link>http://localhost:1313/portfolio/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/aboutme/</guid>
+      <guid>http://localhost:1313/portfolio/aboutme/</guid>
       <description>&lt;h1 id=&#34;-whoami&#34;&gt; whoami&lt;/h1&gt;
 &lt;p&gt;Hey!&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m a machine learning software engineer &lt;a href=&#34;https://www.bosch-sensortec.com/&#34;&gt;@BoschSensortec&lt;/a&gt; focusing on Edge-AI deployment strategies.&lt;/p&gt;
@@ -51,10 +51,10 @@
     
     <item>
       <title>Experience</title>
-      <link>//localhost:1313/experience/</link>
+      <link>http://localhost:1313/portfolio/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/experience/</guid>
+      <guid>http://localhost:1313/portfolio/experience/</guid>
       <description>&lt;h1&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
 &lt;table&gt;
