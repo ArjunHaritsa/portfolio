@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Arjun's Portfolio</title><link>https://arjunharitsa.github.io/portfolio/tags/</link><description>Recent content in Tags on Arjun's Portfolio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://arjunharitsa.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>ಮಲೆನಾಡು</title><link>https://arjunharitsa.github.io/portfolio/tags/%E0%B2%AE%E0%B2%B2%E0%B3%86%E0%B2%A8%E0%B2%BE%E0%B2%A1%E0%B3%81/</link><pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate><guid>https://arjunharitsa.github.io/portfolio/tags/%E0%B2%AE%E0%B2%B2%E0%B3%86%E0%B2%A8%E0%B2%BE%E0%B2%A1%E0%B3%81/</guid><description/><content/></item><item><title>Thoughts</title><link>https://arjunharitsa.github.io/portfolio/tags/thoughts/</link><pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate><guid>https://arjunharitsa.github.io/portfolio/tags/thoughts/</guid><description/><content/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Arjun&#39;s Portfolio</title>
+    <link>http://localhost:1313/portfolio/tags/</link>
+    <description>Recent content in Tags on Arjun&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ಸ್ನಿಗ್ಧ</title>
+      <link>http://localhost:1313/portfolio/tags/%E0%B2%B8%E0%B3%8D%E0%B2%A8%E0%B2%BF%E0%B2%97%E0%B3%8D%E0%B2%A7/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/tags/%E0%B2%B8%E0%B3%8D%E0%B2%A8%E0%B2%BF%E0%B2%97%E0%B3%8D%E0%B2%A7/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>ಮಲೆನಾಡು</title>
+      <link>http://localhost:1313/portfolio/tags/%E0%B2%AE%E0%B2%B2%E0%B3%86%E0%B2%A8%E0%B2%BE%E0%B2%A1%E0%B3%81/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/tags/%E0%B2%AE%E0%B2%B2%E0%B3%86%E0%B2%A8%E0%B2%BE%E0%B2%A1%E0%B3%81/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>ಬಾಲ್ಯ</title>
+      <link>http://localhost:1313/portfolio/tags/%E0%B2%AC%E0%B2%BE%E0%B2%B2%E0%B3%8D%E0%B2%AF/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/tags/%E0%B2%AC%E0%B2%BE%E0%B2%B2%E0%B3%8D%E0%B2%AF/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>ಯುಗಾದಿ</title>
+      <link>http://localhost:1313/portfolio/tags/%E0%B2%AF%E0%B3%81%E0%B2%97%E0%B2%BE%E0%B2%A6%E0%B2%BF/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/tags/%E0%B2%AF%E0%B3%81%E0%B2%97%E0%B2%BE%E0%B2%A6%E0%B2%BF/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Thoughts</title>
+      <link>http://localhost:1313/portfolio/tags/thoughts/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/tags/thoughts/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>
